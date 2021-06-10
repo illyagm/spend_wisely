@@ -7,6 +7,8 @@ export interface IUser extends Document {
     my_lists: string[],
     lists_shared_with_me: string[],
     my_main_list: string,
+    created_at: Date,
+    updated_at: Date,
 }
 
 const UserSchema = new Schema ({
